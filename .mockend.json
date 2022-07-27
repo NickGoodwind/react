@@ -1,0 +1,15 @@
+{
+  "Empleado": {
+    "nombres": { "regexp": "[A-Z][a-z]{5,10}" },
+    "apellidos": { "regexp": "[A-Z][a-z]{5,10}" },
+    "telefono": { "regexp": "[\\+][0-9]{2,3}\\ [0-9]{3}-[0-9]{3}-[0-9]{4}" },
+    "cedula": { "regexp": "([1-9]\\.[0-9]{2}|[1-9]{1,2})?[1-9]{1}\\.[0-9]{3}\\.[0-9]{3}" },
+    "correo": { "regexp": "[a-z]{5,10}@mycompany\\.com" },
+    "direccion": {"loremWords": { "minLength": 5, "maxLength": 20 } },
+    "fechaNacimiento": { "dateTime": { 
+      "min": "1900-01-01T00:00:00Z",
+      "max": "2020-12-31T23:59:59Z"
+    } },
+    "cargo": { "string": [ "Desarrollador", "Asistente", "Lider de equipo", "Programador", "Vendedor" ] }
+  }
+}
